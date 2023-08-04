@@ -7,14 +7,16 @@
 
 - [Curriculum Vitae](#curriculum-vitae)
   - [1. Basic Information](#1-basic-information)
-  - [2. Profile](#2-profile)
-  - [3. Employment History / Work Experience](#3-employment-history-work-experience)
-    - [株式会社Voicy (2017.10 - 2019.07)](#株式会社voicy-201710-201907)
+  - [2. Overview](#2-overview)
+  - [3. Employment History / Work Experience](#3-employment-history--work-experience)
+    - [株式会社ZEALS (2019.08 - 2023.04)](#株式会社zeals-201908---202304)
       - [Responsibilities](#responsibilities)
-    - [楽天株式会社 トラベル事業部 (2011.04 - 2017.09)](#楽天株式会社-トラベル事業部-201104-201709)
+    - [株式会社Voicy (2017.10 - 2019.07)](#株式会社voicy-201710---201907)
       - [Responsibilities](#responsibilities-1)
+    - [楽天株式会社 トラベル事業部 (2011.04 - 2017.09)](#楽天株式会社-トラベル事業部-201104---201709)
+      - [Responsibilities](#responsibilities-2)
   - [4. Education](#4-education)
-        - [関西学院大学 商学部 (2007 - 2011)](#関西学院大学-商学部-2007-2011)
+        - [関西学院大学 商学部 (2007 - 2011)](#関西学院大学-商学部-2007---2011)
         - [Natural Language](#natural-language)
   - [5. Key Skills](#5-key-skills)
     - [Application Development](#application-development)
@@ -37,7 +39,7 @@
 | Key | Value |
 |---|---|
 | Name | 濱田恭匡 (Yoshimasa Hamada) |
-| Location | 東京 |
+| Location | 福岡 |
 | Birthday | 1988.07.29 |
 | Email | pepperoni9@gmail.com |
 | Medium | [@yoshimasahamada](https://medium.com/@yoshimasahamada) |
@@ -45,14 +47,29 @@
 | Twitter | [@panchan9](https://twitter.com/panchan9) |
 
 
-## 2. Profile
-JavaScriptのSPAフレームワーク [Aurelia](https://aurelia.io/) を使ったWebアプリケーション開発が得意。変更に強く、メンテナンス性の高いコードを重視しており、TypeScriptとDI（Dependency Injection）を好む。
-また、Web標準へも積極的に追従しており、WebComponentsやブラウザのAPI実装状況などにアンテナを張っている。
+## 2. Overview
+Webアプリケーションのフロントからバックエンドに加え、インフラまで含めた一気通貫でのシステム設計・開発が得意。
+プロダクトの初期フェーズはFirebaseやCloud Runなどを使ったサーバーレス開発でスピードを重視しつつ、規模拡大に応じてgRPCとKubernetesを使った、拡張性やスケーラビリティの高いシステムアーキテクチャを構築できる。
 
-バックエンドについては、Clean ArchitectureをベースにしたGoのアプリケーション開発が得意。プロダクトの初期フェーズはFirebaseやCloud Runを使ったサーバーレス開発でスピードを重視。規模拡大に応じてgRPCとKubernetesを使った、疎結合で拡張性の高いシステムアーキテクチャを構築できる。
+バックエンドについては、Clean ArchitectureをベースにしたGoのAPIサーバーやマイクロサービスの開発経験が豊富。
+
+フロントエンドについては、JavaScriptのSPAフレームワーク [Aurelia](https://aurelia.io/) を使ったWebアプリケーション開発が得意。変更に強く、メンテナンス性の高いコードを重視しており、TypeScriptとDI（Dependency Injection）を好む。
+また、Web標準へも積極的に追従しており、WebComponentsやブラウザのAPI実装状況などにアンテナを張っている。
 
 
 ## 3. Employment History / Work Experience
+
+### 株式会社ZEALS (2019.08 - 2023.04)
+#### Responsibilities
+- LINEやFacebookなどの公開API向けのメッセージ配信システムの設計・開発・運用。
+  - サービス初期にPythonで開発されたメッセージ配信システムを、Goを採用したマイクロサービス化し、サービスの可用性と拡張性を向上。
+  - gRPCによるサービス間通信を実装し、マイクロサービスに求められるTraceabilityを[OpenTelemetry](https://opentelemetry.io/)を用いて実現。
+  - データストアとして、Google Cloud SQL（MySQL、PostgreSQL）やRedisを採用。
+- GCP上のクラウドリソースやモニタリングシステムの設計・運用。
+  - 全アプリケーションが稼働しているKubernetesクラスターの設計・運用。
+  - Kubernetes上のワークロードの特性に応じた、適切なリソース選定とManifestのコード管理。
+  - 各種GCPリソース（VCP network, DNS, Load Balancer, Storage, PubSub, SQL, etc）の設計、および[Pulumi](https://www.pulumi.com/)を使用した、Infrastructure as Code（IaC）。
+  - Datadogを使用し、アプリケーションの異常を検知しSlackへアラートを送信するモニタリングシステムの構築。
 
 ### 株式会社Voicy (2017.10 - 2019.07)
 #### Responsibilities
@@ -112,9 +129,9 @@ JavaScriptのSPAフレームワーク [Aurelia](https://aurelia.io/) を使っ�
 
 #### Frontend
 - HTML
-- CSS (SASS)
+- CSS
 - JavaScript
-  - ECMA Script 2015 以降
+  - ECMA Script
   - TypeScript
 - Framework
   - Aurelia
@@ -123,17 +140,15 @@ JavaScriptのSPAフレームワーク [Aurelia](https://aurelia.io/) を使っ�
 
 #### Backend
 - Golang
-  - Version: 11 / 12
   - Framework
     - Echo (REST API)
-    - No need (gRPC)
   - ORM
     - SQL Boiler
     - xorm
   - Testing
     - testify
 - Python
-  - Version: 2.7 / 3.5-7
+  - Version: 2.7 / 3.5-8
   - Framework
     - Falcon
   - Machine Learning
@@ -155,8 +170,11 @@ JavaScriptのSPAフレームワーク [Aurelia](https://aurelia.io/) を使っ�
 
 #### Database
 - RDBMS
+  - PostgreSQL
   - MySQL
   - Oracle Database
+- KVS
+  - Redis
 - Document DB
   - Firestore
 - Graph DB
@@ -168,6 +186,7 @@ JavaScriptのSPAフレームワーク [Aurelia](https://aurelia.io/) を使っ�
 #### CI/CD
 - CircleCI
 - Cloud Build
+- GitHub Actions
 
 #### Others
 - WebRTC
@@ -201,6 +220,8 @@ JavaScriptのSPAフレームワーク [Aurelia](https://aurelia.io/) を使っ�
   - Cloud Pub/Sub
   - Cloud NAT
   - Cloud DNS
+  - Cloud SQL
+  - Cloud Storage
   - Firebase
     - Hosting
     - Authentication
