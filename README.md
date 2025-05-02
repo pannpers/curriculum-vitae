@@ -9,12 +9,14 @@
   - [1. Basic Information](#1-basic-information)
   - [2. Overview](#2-overview)
   - [3. Employment History / Work Experience](#3-employment-history--work-experience)
-    - [株式会社ZEALS (2019.08 - 2023.04)](#株式会社zeals-201908---202304)
+    - [ブロックチェーン関連企業 (2023.09 - 2025.05)](#ブロックチェーン関連企業-202309---202505)
       - [Responsibilities](#responsibilities)
-    - [株式会社Voicy (2017.10 - 2019.07)](#株式会社voicy-201710---201907)
+    - [株式会社ZEALS (2019.08 - 2023.04)](#株式会社zeals-201908---202304)
       - [Responsibilities](#responsibilities-1)
-    - [楽天株式会社 トラベル事業部 (2011.04 - 2017.09)](#楽天株式会社-トラベル事業部-201104---201709)
+    - [株式会社Voicy (2017.10 - 2019.07)](#株式会社voicy-201710---201907)
       - [Responsibilities](#responsibilities-2)
+    - [楽天株式会社 トラベル事業部 (2011.04 - 2017.09)](#楽天株式会社-トラベル事業部-201104---201709)
+      - [Responsibilities](#responsibilities-3)
   - [4. Education](#4-education)
         - [関西学院大学 商学部 (2007 - 2011)](#関西学院大学-商学部-2007---2011)
         - [Natural Language](#natural-language)
@@ -44,7 +46,7 @@
 | Email | pepperoni9@gmail.com |
 | Medium | [@yoshimasahamada](https://medium.com/@yoshimasahamada) |
 | Qiita | [pannpers](https://qiita.com/pannpers)
-| Twitter | [@panchan9](https://twitter.com/panchan9) |
+<!-- | Twitter | [@panchan9](https://twitter.com/panchan9) | -->
 
 
 ## 2. Overview
@@ -54,10 +56,22 @@ Webアプリケーションのフロントからバックエンドに加え、�
 バックエンドについては、Clean ArchitectureをベースにしたGoのAPIサーバーやマイクロサービスの開発経験が豊富。
 
 フロントエンドについては、JavaScriptのSPAフレームワーク [Aurelia](https://aurelia.io/) を使ったWebアプリケーション開発が得意。変更に強く、メンテナンス性の高いコードを重視しており、TypeScriptとDI（Dependency Injection）を好む。
-また、Web標準へも積極的に追従しており、WebComponentsやブラウザのAPI実装状況などにアンテナを張っている。
+<!-- また、Web標準へも積極的に追従しており、WebComponentsやブラウザのAPI実装状況などにアンテナを張っている。 -->
 
 
 ## 3. Employment History / Work Experience
+
+### ブロックチェーン関連企業 (2023.09 - 2025.05)
+#### Responsibilities
+- インターオペラビリティ（異なるブロックチェーン同士でも送金やデータのやり取りを可能にすること）をユーザーに提供するプラットフォームのバックエンド開発・運用。
+  - Goを採用したバックエンドサーバーをフルスクラッチで開発。バックエンドのメンバー構成はAPI仕様の設計とコードレビューを担当する社員1名と、主に内部設計と実装を担当する自分の2名体制。
+  - フロントエンドとの通信はgRPCを採用し、データベースはPostgreSQL (Azure Cosmos DB)を使用。
+  - GitHub Actionsを使用したCI/CDワークフローを作成し、Lintやテスト、Container ImageのビルドからContainer Registryへのプッシュまでを実現。
+- SREチームと連携し、KubernetesやAzureリソースの作成・運用を担当。
+  - バックエンドサーバーや関連ジョブなどのKubernetesマニフェストを主に作成。マニフェストの生成はkustomizeを使用。
+  - Azure上でアプリケーションエラーを検知し、Slackへアラートを行うためのモニタリングリソースを作成。
+
+---
 
 ### 株式会社ZEALS (2019.08 - 2023.04)
 #### Responsibilities
