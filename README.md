@@ -9,14 +9,16 @@
   - [1. Basic Information](#1-basic-information)
   - [2. Overview](#2-overview)
   - [3. Employment History / Work Experience](#3-employment-history--work-experience)
-    - [ブロックチェーン関連企業 (2023.09 - 2025.05)](#ブロックチェーン関連企業-202309---202505)
+    - [リーガルテック企業 (2025.06 - 2026.03)](#リーガルテック企業-202506---202603)
       - [Responsibilities](#responsibilities)
-    - [株式会社ZEALS (2019.08 - 2023.04)](#株式会社zeals-201908---202304)
+    - [ブロックチェーン関連企業 (2023.09 - 2025.05)](#ブロックチェーン関連企業-202309---202505)
       - [Responsibilities](#responsibilities-1)
-    - [株式会社Voicy (2017.10 - 2019.07)](#株式会社voicy-201710---201907)
+    - [株式会社ZEALS (2019.08 - 2023.04)](#株式会社zeals-201908---202304)
       - [Responsibilities](#responsibilities-2)
-    - [楽天株式会社 トラベル事業部 (2011.04 - 2017.09)](#楽天株式会社-トラベル事業部-201104---201709)
+    - [株式会社Voicy (2017.10 - 2019.07)](#株式会社voicy-201710---201907)
       - [Responsibilities](#responsibilities-3)
+    - [楽天株式会社 トラベル事業部 (2011.04 - 2017.09)](#楽天株式会社-トラベル事業部-201104---201709)
+      - [Responsibilities](#responsibilities-4)
   - [4. Education](#4-education)
         - [関西学院大学 商学部 (2007 - 2011)](#関西学院大学-商学部-2007---2011)
         - [Natural Language](#natural-language)
@@ -56,10 +58,25 @@ Webアプリケーションのフロントからバックエンドに加え、�
 バックエンドについては、Clean ArchitectureをベースにしたGoのAPIサーバーやマイクロサービスの開発経験が豊富。
 
 フロントエンドについては、JavaScriptのSPAフレームワーク [Aurelia](https://aurelia.io/) を使ったWebアプリケーション開発が得意。変更に強く、メンテナンス性の高いコードを重視しており、TypeScriptとDI（Dependency Injection）を好む。
-<!-- また、Web標準へも積極的に追従しており、WebComponentsやブラウザのAPI実装状況などにアンテナを張っている。 -->
+
+また、Web標準技術へも積極的に追従しており、WebComponentsやブラウザのAPI実装状況などにアンテナを張っている。
 
 
 ## 3. Employment History / Work Experience
+
+### リーガルテック企業 (2025.06 - 2026.03)
+#### Responsibilities
+- 企業向けのLLMを活用した営業活動自動化SaaSの新規プロダクト開発。
+  - MVPとして、営業およびクライアント企業との案件提案メールの自動生成・返信機能を開発。LLMによるメール文面の自動生成を中核機能として実装。
+  - SaaSとして必要なサブスクリプションプラン管理や認証・認可機能の設計・実装。
+  - バックエンドはGoを採用し、モジュラーモノリス構成で設計。APIはConnect-RPCを使用。
+  - インフラはGCP上に構築。AlloyDB、GKE、Cloud Pub/Sub、Memorystoreなどを使用。
+  - BE 4-5名、FE 1名、PM 2名のチームで、バックエンドエンジニアとして設計から実装まで一貫して担当。
+- AI Agentを活用したSpec-Driven Development（SDD）の実践。
+  - Kiroをベースに、Requirement → Design → Tasks → Implementationのワークフローで仕様書を中心とした開発プロセスを運用。
+  - Claude Code、Cursor、Antigravityなどの AI Agentツールを活用し、開発の手戻り防止と、ナレッジ蓄積による情報共有コストの低下を実現。
+
+---
 
 ### ブロックチェーン関連企業 (2023.09 - 2025.05)
 #### Responsibilities
@@ -149,20 +166,18 @@ Webアプリケーションのフロントからバックエンドに加え、�
   - TypeScript
 - Framework
   - Aurelia
-  - Angular
 - PWA (Progressive Web App)
 
 #### Backend
 - Golang
   - Framework
-    - Echo (REST API)
+    - Connect-RPC
   - ORM
     - SQL Boiler
-    - xorm
+    - Bun
   - Testing
     - testify
 - Python
-  - Version: 2.7 / 3.5-8
   - Framework
     - Falcon
   - Machine Learning
@@ -172,21 +187,19 @@ Webアプリケーションのフロントからバックエンドに加え、�
       - JupyterHub
       - JupyterLab
 
-**Note:** 機械学習系のライブラリは少し触れる程度
-
 #### Architecture Design
 - Clean Architecture
 
 #### API Design
-- gRPC
+- gRPC / Connect-RPC
   - Protocol Buffers
-- Open API Specification (Swagger)
+- Open API Specification
 
 #### Database
 - RDBMS
   - PostgreSQL
+  - AlloyDB
   - MySQL
-  - Oracle Database
 - KVS
   - Redis
 - Document DB
@@ -198,9 +211,9 @@ Webアプリケーションのフロントからバックエンドに加え、�
   - Teradata Database
 
 #### CI/CD
+- GitHub Actions
 - CircleCI
 - Cloud Build
-- GitHub Actions
 
 #### Others
 - WebRTC
@@ -210,8 +223,6 @@ Webアプリケーションのフロントからバックエンドに加え、�
   - Software
     - FFmpeg
     - Sox
-<!-- - UX Design -->
-  <!-- - Information Architecture -->
 
 
 ---
@@ -220,7 +231,6 @@ Webアプリケーションのフロントからバックエンドに加え、�
 - Docker
 - Kubernetes
   - kustomize
-  - Skaffold
   - cert-manager \
   (issue and update certificate of Let's Encrypt in k8s)
 - Load Balancer / Reverse Proxy
@@ -231,11 +241,15 @@ Webアプリケーションのフロントからバックエンドに加え、�
 #### Cloud Provider
 - GCP
   - GKE
+  - Vertext AI
+  - BigQuery
   - Cloud Pub/Sub
   - Cloud NAT
   - Cloud DNS
+  - AlloyDB
   - Cloud SQL
   - Cloud Storage
+  - Memorystore
   - Firebase
     - Hosting
     - Authentication
@@ -250,6 +264,11 @@ Webアプリケーションのフロントからバックエンドに加え、�
 ---
 
 ### Development Tools
+- AI Agent
+  - Claude Code
+  - Cursor
+  - Antigravity
+  - Kiro
 - Code Editor
   - VS Code
   - Vim
