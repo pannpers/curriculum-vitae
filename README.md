@@ -9,16 +9,18 @@
   - [1. Basic Information](#1-basic-information)
   - [2. Overview](#2-overview)
   - [3. Employment History / Work Experience](#3-employment-history--work-experience)
-    - [リーガルテック企業 (2025.06 - 2026.03)](#リーガルテック企業-202506---202603)
+    - [HRテック企業 (2026.04 - 2026.08)](#hrテック企業-202604---202608)
       - [Responsibilities](#responsibilities)
-    - [ブロックチェーン関連企業 (2023.09 - 2025.05)](#ブロックチェーン関連企業-202309---202505)
+    - [リーガルテック企業 (2025.06 - 2026.03)](#リーガルテック企業-202506---202603)
       - [Responsibilities](#responsibilities-1)
-    - [株式会社ZEALS (2019.08 - 2023.04)](#株式会社zeals-201908---202304)
+    - [ブロックチェーン関連企業 (2023.09 - 2025.05)](#ブロックチェーン関連企業-202309---202505)
       - [Responsibilities](#responsibilities-2)
-    - [株式会社Voicy (2017.10 - 2019.07)](#株式会社voicy-201710---201907)
+    - [株式会社ZEALS (2019.08 - 2023.04)](#株式会社zeals-201908---202304)
       - [Responsibilities](#responsibilities-3)
-    - [楽天株式会社 トラベル事業部 (2011.04 - 2017.09)](#楽天株式会社-トラベル事業部-201104---201709)
+    - [株式会社Voicy (2017.10 - 2019.07)](#株式会社voicy-201710---201907)
       - [Responsibilities](#responsibilities-4)
+    - [楽天株式会社 トラベル事業部 (2011.04 - 2017.09)](#楽天株式会社-トラベル事業部-201104---201709)
+      - [Responsibilities](#responsibilities-5)
   - [4. Education](#4-education)
         - [関西学院大学 商学部 (2007 - 2011)](#関西学院大学-商学部-2007---2011)
         - [Natural Language](#natural-language)
@@ -63,6 +65,16 @@ Webアプリケーションのフロントからバックエンドに加え、�
 
 
 ## 3. Employment History / Work Experience
+
+### HRテック企業 (2026.04 - 2026.08)
+#### Responsibilities
+- 従業員の福利厚生申請・ポイント管理・リモートワーク申請など、HR業務を一元化するSaaSプラットフォームのバックエンド開発・運用。業務委託として従事。
+  - バックエンドはGoを採用し、GraphQLによるAPIを提供するモジュラーモノリス構成。データベースはPostgreSQL（AlloyDB）を使用。
+  - Firebase Identity PlatformをベースとしたMFA（多要素認証）機能の設計・実装。メール確認フロー、SMS認証（国際電話番号対応を含む）、Firebaseエラーコードの日本語化などを担当。
+  - AlloyDB読み取りレプリカへのトラフィック分散を見据えたDB読み書き分離の設計・実装。書き込み用と読み取り用の接続プールを分離し、接続効率を改善。
+  - Cloud MonitoringによるSLO（サービスレベル目標）ダッシュボードの設計・構築、および負荷テスト用プリプロダクション環境のインフラ整備（Terraform）を担当。
+
+---
 
 ### リーガルテック企業 (2025.06 - 2026.03)
 #### Responsibilities
@@ -172,9 +184,10 @@ Webアプリケーションのフロントからバックエンドに加え、�
 - Golang
   - Framework
     - Connect-RPC
-  - ORM
+  - ORM / Query Builder
     - SQL Boiler
     - Bun
+    - sqlc
   - Testing
     - testify
 - Python
